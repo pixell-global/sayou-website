@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #000; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+
+    .og {
+      width: 1200px;
+      height: 630px;
+      background: #0C0B0A;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .og::before {
+      content: '';
+      position: absolute;
+      width: 700px;
+      height: 500px;
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -55%);
+      background: radial-gradient(ellipse, rgba(196,164,110,0.07) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .og-logo {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 24px;
+    }
+
+    .og-logo svg {
+      width: 64px;
+      height: 64px;
+    }
+
+    .og-logo svg path {
+      stroke: #C4A46E;
+    }
+
+    .og-wordmark {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 72px;
+      font-weight: 300;
+      letter-spacing: 0.06em;
+      color: #E8E3D8;
+      line-height: 1;
+    }
+
+    .og-tagline {
+      font-family: 'IBM Plex Sans', system-ui, sans-serif;
+      font-size: 22px;
+      font-weight: 400;
+      color: #8A8579;
+      position: relative;
+      z-index: 1;
+      margin-bottom: 48px;
+    }
+
+    .og-descriptors {
+      font-family: 'IBM Plex Sans', system-ui, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #C4A46E;
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="og">
+    <div class="og-logo">
+      <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 18 24 A 22 18 0 1 0 46 24" fill="none" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      <div class="og-wordmark">sayou</div>
+    </div>
+    <div class="og-tagline">A file-system inspired context store for AI agents</div>
+    <div class="og-descriptors">Open Source &middot; File-First &middot; SQL-Compatible</div>
+  </div>
+</body>
+</html>
