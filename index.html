@@ -3,38 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>sayou. Think with everything you know.</title>
-  <meta name="description" content="Connect Notion, Drive, and Slack. sayou agent thinks with everything you know. Open source.">
+  <title>sayou — AI Knowledge Management | Connect Notion & Slack</title>
+  <meta name="description" content="Connect Notion and Slack into one AI-powered workspace. Ask sayou agent anything across all your tools. Open source. Free to start.">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="sayou. Think with everything you know.">
-  <meta property="og:description" content="Connect Notion, Drive, and Slack. sayou agent thinks with everything you know. Open source.">
+  <meta property="og:url" content="https://sayou.dev">
+  <meta property="og:site_name" content="sayou">
+  <meta property="og:title" content="sayou — AI Knowledge Management | Connect Notion & Slack">
+  <meta property="og:description" content="Connect Notion and Slack into one AI-powered workspace. Ask sayou agent anything across all your tools. Open source. Free to start.">
   <meta property="og:image" content="https://sayou.dev/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="sayou. Think with everything you know.">
+  <meta property="og:image:alt" content="sayou — AI knowledge management for Notion and Slack">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="sayou. Think with everything you know.">
-  <meta name="twitter:description" content="Connect Notion, Drive, and Slack. sayou agent thinks with everything you know. Open source.">
+  <meta name="twitter:title" content="sayou — AI Knowledge Management | Connect Notion & Slack">
+  <meta name="twitter:description" content="Connect Notion and Slack into one AI-powered workspace. Ask sayou agent anything across all your tools. Open source.">
   <meta name="twitter:image" content="https://sayou.dev/og-image.png">
 
   <!-- SEO -->
   <meta name="author" content="Pixell">
-  <meta name="keywords" content="AI knowledge management, AI agent, context store, Notion integration, Google Drive integration, Slack integration, AI assistant, open source">
+  <meta name="keywords" content="AI knowledge management, AI agent, AI workspace, Notion AI integration, Slack AI search, AI second brain, connect work tools to AI, open source AI assistant, personal AI, knowledge base AI">
   <link rel="canonical" href="https://sayou.dev">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0C0B0A">
 
-  <!-- Structured Data -->
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.svg" sizes="any">
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://us.i.posthog.com">
+
+  <!-- PostHog -->
+  <script>
+    !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+    posthog.init('phc_fcGpqDbuOyboaij9eazUUZzeWJ9mxbMIDzdNu6urJ9d', {
+      api_host: 'https://us.i.posthog.com',
+      person_profiles: 'identified_only',
+      capture_pageview: true,
+      capture_pageleave: true,
+      autocapture: true,
+    });
+    posthog.register({ site: 'sayou' });
+  </script>
+
+  <!-- Structured Data: SoftwareApplication -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "sayou",
-    "description": "Think with everything you know. Connect Notion, Drive, and Slack. Ask any AI. Open source knowledge layer.",
+    "url": "https://sayou.dev",
+    "description": "AI knowledge management tool that connects Notion and Slack into one searchable workspace. Ask sayou agent anything across all your tools.",
     "applicationCategory": "ProductivityApplication",
     "operatingSystem": "Web",
     "license": "https://opensource.org/licenses/Apache-2.0",
@@ -43,29 +68,109 @@
         "@type": "Offer",
         "name": "Free",
         "price": "0",
-        "priceCurrency": "USD"
+        "priceCurrency": "USD",
+        "description": "1 connected source, unlimited files, daily sync"
       },
       {
         "@type": "Offer",
         "name": "Pro",
         "price": "25",
         "priceCurrency": "USD",
-        "billingIncrement": "P1M"
+        "billingIncrement": "P1M",
+        "description": "Unlimited sources, real-time sync, full history search"
       }
     ],
     "author": {
       "@type": "Organization",
-      "name": "Pixell"
+      "name": "Pixell",
+      "url": "https://pixell.global"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "ratingCount": "1"
     }
   }
   </script>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Pixell",
+    "url": "https://pixell.global",
+    "logo": "https://sayou.dev/sayou-mark.svg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "contact@pixell.global",
+      "contactType": "customer support"
+    },
+    "sameAs": [
+      "https://github.com/pixell-global/sayou"
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What can sayou actually do?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Connect your tools, then ask sayou agent anything. It searches across your Notion pages and Slack conversations to give you answers grounded in your own work."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my data safe?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "sayou is open source. Every line of code is public. Your data is encrypted in transit and at rest, never used for training, and you can delete everything at any time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What tools does sayou connect to?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Notion and Slack today. Google Drive, Gmail, Linear, and GitHub are coming next. For developers, sayou also works with Claude Code, Cursor, and other AI coding tools."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the free plan actually free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. One connected source, unlimited files, no credit card. Upgrade when you need more sources or real-time sync."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I self-host sayou?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The core is Apache 2.0. Run it on your own infrastructure. The hosted version just means you don't have to."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if I cancel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your data is removed from sayou. Your original files in Notion and Slack are never touched."
+        }
+      }
+    ]
+  }
+  </script>
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500&family=Noto+Serif+KR:wght@300&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="tokens.css">
@@ -640,7 +745,6 @@
     }
 
     .mockup-source-dot.notion { background: var(--text-primary); }
-    .mockup-source-dot.gdrive { background: #6BA3BE; }
     .mockup-source-dot.slack { background: var(--sayou-gold); }
 
     .mockup-input {
@@ -738,7 +842,6 @@
     }
 
     .ws-folder-name.notion::before { background: var(--text-primary); }
-    .ws-folder-name.gdrive::before { background: #6BA3BE; }
     .ws-folder-name.slack::before { background: var(--sayou-gold); }
 
     .ws-file {
@@ -901,6 +1004,49 @@
       width: 100%;
       justify-content: center;
       text-align: center;
+    }
+
+    .pricing-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-3);
+      margin-bottom: var(--space-8);
+    }
+
+    .pricing-toggle-btn {
+      padding: var(--space-2) var(--space-4);
+      border-radius: var(--radius-sm);
+      font-family: var(--font-body);
+      font-size: var(--text-body-sm);
+      font-weight: var(--weight-regular);
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.2s, color 0.2s;
+      background: transparent;
+      color: var(--text-tertiary);
+    }
+
+    .pricing-toggle-btn.active {
+      background: var(--bg-surface);
+      color: var(--text-primary);
+    }
+
+    .pricing-save-badge {
+      font-size: var(--text-caption);
+      font-weight: var(--weight-medium);
+      background: rgba(196, 164, 110, 0.15);
+      color: var(--sayou-gold);
+      padding: 2px 8px;
+      border-radius: 9999px;
+      margin-left: var(--space-2);
+    }
+
+    .pricing-price .pricing-original {
+      font-size: var(--text-body);
+      color: var(--text-muted);
+      text-decoration: line-through;
+      margin-right: var(--space-2);
     }
 
     /* ===== FAQ ===== */
@@ -1167,8 +1313,7 @@
     <div class="nav-links">
       <a href="opensource.html">Open Source</a>
       <a href="#pricing">Pricing</a>
-      <a href="https://docs.sayou.dev">Docs</a>
-      <a href="https://app.sayou.com" class="btn btn-primary btn-sm">Get Started</a>
+      <a href="https://drive.sayou.dev" class="btn btn-primary btn-sm" data-ph="nav_cta_click">Try free</a>
     </div>
   </nav>
 
@@ -1184,11 +1329,11 @@
     <h1 class="hero-headline">Think with everything you know.</h1>
 
     <p class="hero-sub">
-      Connect Notion, Drive, and Slack. Ask Sayou.
+      Connect Notion and Slack. Ask Sayou.
     </p>
 
     <div class="hero-ctas">
-      <a href="https://app.sayou.com" class="btn btn-primary">Get started &rarr;</a>
+      <a href="https://drive.sayou.dev" class="btn btn-primary" data-ph="hero_cta_click">Try sayou free &rarr;</a>
     </div>
 
     <p class="hero-reassurance">Open source. Free to start.</p>
@@ -1214,7 +1359,7 @@
             </svg>
           </div>
           <h3>Scattered</h3>
-          <p>Notes in Notion. Docs in Drive. Conversations in Slack. You wrote it somewhere.</p>
+          <p>Notes in Notion. Conversations in Slack. You wrote it somewhere.</p>
         </div>
 
         <div class="principle-card">
@@ -1304,7 +1449,7 @@
           <div class="step-number">1</div>
           <h3>Connect</h3>
           <p>
-            Sign up. Link Notion, Google Drive, or Slack. One click each.
+            Sign up. Link Notion or Slack. One click each.
             No API keys, no configuration.
           </p>
         </div>
@@ -1368,17 +1513,6 @@
                 </div>
               </div>
               <div class="ws-folder">
-                <div class="ws-folder-name gdrive">Google Drive</div>
-                <div class="ws-file">
-                  <span class="ws-file-name">Competitive Analysis</span>
-                  <span class="ws-file-meta"><span class="ws-file-badge">synced</span> Feb 5</span>
-                </div>
-                <div class="ws-file">
-                  <span class="ws-file-name">Board Deck Feb 2025</span>
-                  <span class="ws-file-meta"><span class="ws-file-badge">synced</span> Feb 4</span>
-                </div>
-              </div>
-              <div class="ws-folder">
                 <div class="ws-folder-name slack">Slack</div>
                 <div class="ws-file">
                   <span class="ws-file-name">#product</span>
@@ -1410,7 +1544,6 @@
                 </div>
                 <div class="mockup-sources">
                   <span class="mockup-source"><span class="mockup-source-dot notion"></span>Q3 Pricing Strategy.md</span>
-                  <span class="mockup-source"><span class="mockup-source-dot gdrive"></span>Competitive Analysis</span>
                   <span class="mockup-source"><span class="mockup-source-dot slack"></span>#product Feb 4</span>
                 </div>
               </div>
@@ -1465,6 +1598,12 @@
       <div class="section-label">Pricing</div>
       <h2 class="section-title" style="text-align: center;">Start free. Grow when you're ready.</h2>
 
+      <!-- Interval toggle -->
+      <div class="pricing-toggle">
+        <button class="pricing-toggle-btn active" id="pricing-monthly-btn" onclick="setPricingInterval('monthly')">Monthly</button>
+        <button class="pricing-toggle-btn" id="pricing-annual-btn" onclick="setPricingInterval('annual')">Annual<span class="pricing-save-badge">Save 20%</span></button>
+      </div>
+
       <div class="pricing-grid">
         <!-- Free -->
         <div class="pricing-card">
@@ -1477,13 +1616,13 @@
             <li>sayou agent access</li>
             <li>Last 30 days searchable</li>
           </ul>
-          <a href="https://app.sayou.com" class="btn btn-secondary">Get started</a>
+          <a href="https://drive.sayou.dev" class="btn btn-secondary" data-ph="pricing_cta_click" data-tier="free" data-price="0">Get started</a>
         </div>
 
         <!-- Pro -->
         <div class="pricing-card pricing-card-recommended">
           <div class="pricing-tier">Pro</div>
-          <div class="pricing-price">$25 <span>/mo</span></div>
+          <div class="pricing-price" id="pro-price">$25 <span>/mo</span></div>
           <ul class="pricing-features">
             <li>Unlimited sources</li>
             <li>Real-time sync</li>
@@ -1491,7 +1630,7 @@
             <li>Priority agent responses</li>
             <li>File version history</li>
           </ul>
-          <a href="https://app.sayou.com" class="btn btn-primary">Start thinking &rarr;</a>
+          <a href="https://drive.sayou.dev" class="btn btn-primary" data-ph="pricing_cta_click" data-tier="pro" data-price="25">Start thinking &rarr;</a>
         </div>
 
         <!-- Enterprise -->
@@ -1505,7 +1644,7 @@
             <li>Dedicated support</li>
             <li>Self-hosted option</li>
           </ul>
-          <a href="mailto:hello@sayou.com" class="btn btn-secondary">Let's talk &rarr;</a>
+          <a href="mailto:contact@pixell.global" class="btn btn-secondary" data-ph="pricing_cta_click" data-tier="enterprise" data-price="custom">Let&rsquo;s talk &rarr;</a>
         </div>
       </div>
     </div>
@@ -1521,7 +1660,7 @@
         <details class="faq-item">
           <summary>What can sayou actually do?</summary>
           <p class="faq-answer">
-            Connect your tools, then ask sayou agent anything. It searches across your Notion pages, Google Docs, and Slack conversations to give you answers grounded in your own work.
+            Connect your tools, then ask sayou agent anything. It searches across your Notion pages and Slack conversations to give you answers grounded in your own work.
           </p>
         </details>
 
@@ -1535,7 +1674,7 @@
         <details class="faq-item">
           <summary>What tools does it connect to?</summary>
           <p class="faq-answer">
-            Notion, Google Drive, and Slack today. Gmail, Linear, and GitHub are coming next. For developers, sayou also works with Claude Code, Cursor, and other AI coding tools.
+            Notion and Slack today. Google Drive, Gmail, Linear, and GitHub are coming next. For developers, sayou also works with Claude Code, Cursor, and other AI coding tools.
           </p>
         </details>
 
@@ -1556,7 +1695,7 @@
         <details class="faq-item">
           <summary>What if I cancel?</summary>
           <p class="faq-answer">
-            Your data is removed from sayou. Your original files in Notion, Drive, and Slack are never touched.
+            Your data is removed from sayou. Your original files in Notion and Slack are never touched.
           </p>
         </details>
       </div>
@@ -1567,7 +1706,7 @@
   <section class="final-cta">
     <div class="container">
       <h2 class="section-title">A place to think is waiting.</h2>
-      <a href="https://app.sayou.com" class="btn btn-primary">Start thinking &rarr;</a>
+      <a href="https://drive.sayou.dev" class="btn btn-primary" data-ph="final_cta_click">Try sayou free &rarr;</a>
       <p class="final-cta-reassurance">Free forever for one source. No credit card. No commitment.</p>
     </div>
   </section>
@@ -1587,7 +1726,6 @@
           <div class="footer-col-title">Product</div>
           <ul class="footer-col-links">
             <li><a href="#pricing">Pricing</a></li>
-            <li><a href="https://docs.sayou.dev">Documentation</a></li>
             <li><a href="#">Changelog</a></li>
           </ul>
         </div>
@@ -1606,13 +1744,13 @@
           <ul class="footer-col-links">
             <li><a href="tos.html">Terms</a></li>
             <li><a href="privacy.html">Privacy</a></li>
-            <li><a href="mailto:hello@sayou.com">Contact</a></li>
+            <li><a href="mailto:contact@pixell.global">Contact</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <span class="footer-email">hello@sayou.com</span>
+        <span class="footer-email">contact@pixell.global</span>
       </div>
     </div>
   </footer>
@@ -1632,6 +1770,75 @@
         mockup.querySelectorAll('.mockup-panel').forEach(p => p.classList.remove('active'));
         tab.classList.add('active');
         mockup.querySelector(`[data-panel="${tab.dataset.tab}"]`).classList.add('active');
+        posthog.capture('mockup_tab_switch', { tab: tab.dataset.tab, source: 'landing' });
+      });
+    });
+
+    // Pricing interval toggle
+    function setPricingInterval(interval) {
+      const monthlyBtn = document.getElementById('pricing-monthly-btn');
+      const annualBtn = document.getElementById('pricing-annual-btn');
+      const proPrice = document.getElementById('pro-price');
+
+      monthlyBtn.classList.toggle('active', interval === 'monthly');
+      annualBtn.classList.toggle('active', interval === 'annual');
+
+      if (interval === 'annual') {
+        proPrice.innerHTML = '<span class="pricing-original">$25</span>$20 <span>/mo</span>';
+      } else {
+        proPrice.innerHTML = '$25 <span>/mo</span>';
+      }
+
+      posthog.capture('pricing_interval_toggle', { interval, source: 'landing' });
+    }
+
+    // CTA click tracking (all elements with data-ph attribute)
+    document.querySelectorAll('[data-ph]').forEach(el => {
+      el.addEventListener('click', () => {
+        const props = { cta_text: el.textContent.trim(), source: 'landing' };
+        if (el.dataset.tier) props.tier = el.dataset.tier;
+        if (el.dataset.price) props.price = el.dataset.price;
+        posthog.capture(el.dataset.ph, props);
+      });
+    });
+
+    // FAQ expand tracking
+    document.querySelectorAll('.faq-item').forEach((item, i) => {
+      item.addEventListener('toggle', () => {
+        if (item.open) {
+          posthog.capture('faq_expand', {
+            question: item.querySelector('summary').textContent.trim(),
+            index: i,
+            source: 'landing',
+          });
+        }
+      });
+    });
+
+    // Scroll depth tracking
+    const depthMarks = [25, 50, 75, 100];
+    const firedDepths = new Set();
+    window.addEventListener('scroll', () => {
+      const scrolled = (window.scrollY + window.innerHeight) / document.body.scrollHeight * 100;
+      depthMarks.forEach(mark => {
+        if (scrolled >= mark && !firedDepths.has(mark)) {
+          firedDepths.add(mark);
+          posthog.capture('scroll_depth', { percentage: mark, page: 'landing', source: 'landing' });
+        }
+      });
+    });
+
+    // Contact click tracking
+    document.querySelectorAll('a[href^="mailto:"]').forEach(el => {
+      el.addEventListener('click', () => {
+        posthog.capture('contact_click', { source: 'landing', location: el.closest('footer') ? 'footer' : 'page' });
+      });
+    });
+
+    // Open source link tracking
+    document.querySelectorAll('a[href="opensource.html"]').forEach(el => {
+      el.addEventListener('click', () => {
+        posthog.capture('opensource_click', { source: 'landing', location: el.closest('footer') ? 'footer' : 'nav' });
       });
     });
   </script>
