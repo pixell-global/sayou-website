@@ -3,7 +3,45 @@
  * 사유 (思惟) — Deep contemplation
  *
  * Inspired by the 사유의 방 at the National Museum of Korea.
- * See BRAND_GUIDELINES.md for philosophy and usage.
+ *
+ * ═══════════════════════════════════════════════════════════
+ * READABILITY RULES (mandatory for all pages)
+ * ═══════════════════════════════════════════════════════════
+ *
+ * 1. MINIMUM TEXT COLOR: --text-tertiary (#8A8579)
+ *    NEVER use --text-muted (#625E53) for any visible text or UI element.
+ *    --text-muted is reserved ONLY for decorative elements that are
+ *    intentionally invisible (e.g. disabled states, unused placeholders).
+ *
+ * 2. MINIMUM BODY TEXT SIZE: --text-body (16px)
+ *    All readable body text must be at least 16px.
+ *    --text-body-sm (14px) is allowed ONLY inside compact UI components
+ *    (badges, mockup chat bubbles, code blocks, table cells).
+ *    --text-caption (12px) is NEVER used for readable text. Use only for
+ *    decorative labels or non-essential metadata.
+ *
+ * 3. CARD TEXT:
+ *    - Card headings: --text-h2 (28px) minimum
+ *    - Card descriptions: --text-h4 (18px) minimum
+ *    - Card description color: --text-secondary (#B0AA9D) minimum
+ *
+ * 4. SECTION LABELS: --text-body-sm (14px) in --sayou-gold
+ *
+ * 5. SVG ICONS: stroke/fill color --text-tertiary minimum
+ *    (never --text-muted). Use --sayou-gold for accent icons.
+ *
+ * 6. INTERACTIVE ELEMENTS:
+ *    - Button border: --text-tertiary minimum
+ *    - FAQ expand markers: 28px, --text-tertiary
+ *    - Arrows/connectors: --text-tertiary, 28px minimum
+ *
+ * 7. DARK BACKGROUND RULE: On --bg-app or --bg-primary backgrounds,
+ *    anything meant to be read must be --text-secondary or brighter.
+ *    --text-tertiary is the absolute floor.
+ *
+ * 8. PRODUCT NAME: Always lowercase "sayou" and "sayou agent".
+ *    Never capitalize as "Sayou Agent" or "Sayou".
+ * ═══════════════════════════════════════════════════════════
  */
 
 :root {

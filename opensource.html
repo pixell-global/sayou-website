@@ -24,7 +24,7 @@
   <!-- SEO -->
   <meta name="author" content="Pixell">
   <meta name="keywords" content="AI agents, context store, persistent workspace, LLM, file-first, open source, MCP, Python SDK, agent memory, agent storage">
-  <link rel="canonical" href="https://sayou.dev">
+  <link rel="canonical" href="https://sayou.dev/opensource.html">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0C0B0A">
 
@@ -111,7 +111,7 @@
 
     .section-label {
       font-family: var(--font-body);
-      font-size: var(--text-caption);
+      font-size: var(--text-body-sm);
       font-weight: var(--weight-medium);
       letter-spacing: 0.12em;
       text-transform: uppercase;
@@ -275,7 +275,7 @@
 
     .hero-descriptors {
       font-family: var(--font-body);
-      font-size: var(--text-body-sm);
+      font-size: var(--text-body);
       font-weight: var(--weight-medium);
       letter-spacing: 0.1em;
       text-transform: uppercase;
@@ -313,7 +313,7 @@
     }
 
     .btn-secondary {
-      border-color: var(--text-muted);
+      border-color: var(--text-tertiary);
       color: var(--text-secondary);
       background: transparent;
     }
@@ -333,13 +333,13 @@
     .scroll-line {
       width: 1px;
       height: 48px;
-      background: var(--text-muted);
+      background: var(--text-tertiary);
       animation: breathe 3s var(--easing-gentle) infinite;
     }
 
     @keyframes breathe {
-      0%, 100% { opacity: 0.2; transform: scaleY(0.6); }
-      50% { opacity: 0.6; transform: scaleY(1); }
+      0%, 100% { opacity: 0.3; transform: scaleY(0.6); }
+      50% { opacity: 0.8; transform: scaleY(1); }
     }
 
     /* ===== VISION ===== */
@@ -404,8 +404,8 @@
 
     .principle-card h3 {
       font-family: var(--font-display);
-      font-size: var(--text-h3);
-      line-height: var(--leading-h3);
+      font-size: var(--text-h2);
+      line-height: var(--leading-h2);
       font-weight: var(--weight-regular);
       color: var(--text-primary);
       letter-spacing: 0.02em;
@@ -413,8 +413,8 @@
     }
 
     .principle-card p {
-      font-size: var(--text-body-sm);
-      line-height: var(--leading-body-sm);
+      font-size: var(--text-h4);
+      line-height: var(--leading-h4);
       color: var(--text-secondary);
     }
 
@@ -453,7 +453,7 @@
 
     .fm-key { color: var(--sayou-gold); }
     .fm-val { color: var(--sayou-bisaek); }
-    .fm-delim { color: var(--text-muted); }
+    .fm-delim { color: var(--text-tertiary); }
     .fm-heading { color: var(--text-primary); }
 
     .file-explanation p {
@@ -475,7 +475,7 @@
       content: "\2014";
       position: absolute;
       left: 0;
-      color: var(--text-muted);
+      color: var(--text-tertiary);
     }
 
     .file-explanation strong {
@@ -506,7 +506,7 @@
 
     .code-step-label {
       font-family: var(--font-body);
-      font-size: var(--text-body-sm);
+      font-size: var(--text-body);
       font-weight: var(--weight-medium);
       letter-spacing: 0.08em;
       text-transform: uppercase;
@@ -619,8 +619,8 @@
     }
 
     .positioning-card p {
-      font-size: var(--text-body-sm);
-      line-height: var(--leading-body-sm);
+      font-size: var(--text-body);
+      line-height: var(--leading-body);
       color: var(--text-secondary);
     }
 
@@ -678,14 +678,14 @@
     }
 
     .footer-mark path {
-      stroke: var(--text-muted);
+      stroke: var(--text-tertiary);
     }
 
     .footer-brand {
       font-family: var(--font-display);
       font-size: var(--text-h2);
       font-weight: var(--weight-light);
-      color: var(--text-muted);
+      color: var(--text-tertiary);
       letter-spacing: 0.03em;
     }
 
@@ -706,14 +706,14 @@
     }
 
     .footer-attribution {
-      font-size: var(--text-caption);
-      color: var(--text-muted);
+      font-size: var(--text-body-sm);
+      color: var(--text-tertiary);
       margin-bottom: var(--space-1);
     }
 
     .footer-license {
-      font-size: var(--text-caption);
-      color: var(--text-muted);
+      font-size: var(--text-body-sm);
+      color: var(--text-tertiary);
     }
 
     /* ===== INTERSTITIAL: THE NAME ===== */
@@ -920,6 +920,7 @@
 
     <div class="hero-ctas">
       <a href="https://github.com/pixell-global/sayou" class="btn btn-primary">GitHub</a>
+      <a href="/" class="btn btn-secondary">Try hosted version &rarr;</a>
     </div>
 
     <div class="scroll-indicator">
