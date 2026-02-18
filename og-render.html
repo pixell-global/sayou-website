@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { background: #000; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
@@ -19,30 +19,43 @@
       overflow: hidden;
     }
 
+    /* Warm gold glow */
     .og::before {
       content: '';
       position: absolute;
-      width: 700px;
-      height: 500px;
-      top: 45%;
+      width: 900px;
+      height: 600px;
+      top: 40%;
       left: 50%;
-      transform: translate(-50%, -55%);
-      background: radial-gradient(ellipse, rgba(196,164,110,0.07) 0%, transparent 70%);
+      transform: translate(-50%, -50%);
+      background: radial-gradient(ellipse, rgba(196,164,110,0.08) 0%, transparent 65%);
       pointer-events: none;
+    }
+
+    /* Top horizon line */
+    .og::after {
+      content: '';
+      position: absolute;
+      top: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent 0%, rgba(196,164,110,0.2) 30%, rgba(196,164,110,0.3) 50%, rgba(196,164,110,0.2) 70%, transparent 100%);
     }
 
     .og-logo {
       display: flex;
       align-items: center;
-      gap: 20px;
+      gap: 18px;
       position: relative;
       z-index: 1;
-      margin-bottom: 24px;
+      margin-bottom: 40px;
     }
 
     .og-logo svg {
-      width: 64px;
-      height: 64px;
+      width: 52px;
+      height: 52px;
     }
 
     .og-logo svg path {
@@ -51,28 +64,42 @@
 
     .og-wordmark {
       font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 72px;
+      font-size: 56px;
       font-weight: 300;
       letter-spacing: 0.06em;
       color: #E8E3D8;
       line-height: 1;
     }
 
-    .og-tagline {
-      font-family: 'IBM Plex Sans', system-ui, sans-serif;
-      font-size: 22px;
-      font-weight: 400;
-      color: #8A8579;
+    .og-headline {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 64px;
+      font-weight: 300;
+      color: #E8E3D8;
       position: relative;
       z-index: 1;
-      margin-bottom: 48px;
+      margin-bottom: 28px;
+      text-align: center;
+      line-height: 1.15;
+      max-width: 900px;
+    }
+
+    .og-sub {
+      font-family: 'IBM Plex Sans', system-ui, sans-serif;
+      font-size: 26px;
+      font-weight: 400;
+      color: #B0AA9D;
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      margin-bottom: 40px;
     }
 
     .og-descriptors {
       font-family: 'IBM Plex Sans', system-ui, sans-serif;
-      font-size: 14px;
+      font-size: 18px;
       font-weight: 500;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
       color: #C4A46E;
       position: relative;
@@ -88,8 +115,9 @@
       </svg>
       <div class="og-wordmark">sayou</div>
     </div>
-    <div class="og-tagline">A file-system inspired context store for AI agents</div>
-    <div class="og-descriptors">Open Source &middot; File-First &middot; SQL-Compatible</div>
+    <div class="og-headline">Think with everything you know.</div>
+    <div class="og-sub">Connect Notion, Drive, and Slack. Ask Sayou.</div>
+    <div class="og-descriptors">Open Source &middot; Free to Start</div>
   </div>
 </body>
 </html>
